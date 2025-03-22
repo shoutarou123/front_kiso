@@ -1,5 +1,6 @@
-const  date = () => {
-  const now = new Date();
-  document.getElementById('current-date').textContent = now.toLocaleString();
-};
-date();
+const changeTextButton = document.getElementById('changeTextButton');
+const textToChange = document.getElementById('textToChange');
+
+changeTextButton.addEventListener('click', function() {
+  textToChange.textContent = 'テキストが変更されました。';
+})
