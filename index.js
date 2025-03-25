@@ -1,6 +1,10 @@
-document.getElementById('hoge') .addEventListener('mouseenter', function() {
-  this.style.color = 'red';
-});
-document.getElementById('hoge') .addEventListener('mouseleave', function() {
-  this.style.color = '';
-});
+function chcekCheckbox() {
+  const checkbox = document.getElementById('myCheckbox');
+  const result = document.getElementById('result');
+
+  if (checkbox.checked) {
+    result.textContent = "チェックされています";
+  } else {
+    result.textContent = "チェックなしです";
+  }
+}
