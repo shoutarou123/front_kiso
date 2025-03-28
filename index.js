@@ -1,10 +1,10 @@
-function chcekCheckbox() {
-  const checkbox = document.getElementById('myCheckbox');
-  const result = document.getElementById('result');
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = ['要素１', '要素２', '要素３'];
+  const result = document.getElementById("result");
 
-  if (checkbox.checked) {
-    result.textContent = "チェックされています";
-  } else {
-    result.textContent = "チェックなしです";
-  }
-}
+  elements.forEach((elements, index) => {
+    setTimeout(() => {
+      result.textContent = elements;
+    }, index * 1000);
+  });
+});
