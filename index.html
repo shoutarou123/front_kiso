@@ -4,19 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>基礎力反復道場 Javascript-LV.1 No.13 </title>
+  <title>基礎力反復道場 Javascript-LV.1 No.14 </title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>文字数を数える</h1>
-  <input
-  type="text"
-  id="input"
-  />
-  <p>文字数</p>
-  <p><span id="inputCounter">0</span>文字</p>
-
+  <h1>ラジオボタン値表示</h1>
+  <label><input type="radio" name="color" value="赤">赤</label><br>
+  <label><input type="radio" name="color" value="青">青</label><br>
+  <label><input type="radio" name="color" value="黄色">黄色</label><br>
+  <button onClick="showSelected()">色表示</button>
+  <p id="result"></p>
+  
   <script src="index.js"></script>
 </body>
 
